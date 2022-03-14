@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+php -version
 if [ ! -f .env ]; then
     echo "ERROR: need to create .env from .env.dist"
     exit
@@ -46,7 +47,7 @@ if [[ "yes" == "$RECLONE" ]]; then
     repo=$(echo "GIT_REPO_${edition}" | sed "s|-|_|g")
     branch=$(echo "GIT_BRANCH_${edition}" | sed "s|-|_|g")
     tag=$(echo "GIT_TAG_${edition}" | sed "s|-|_|g")
-    github_repo="git@github.com:${!org}/${!repo}.git"
+    github_repo="https://github.com/${!org}/${!repo}.git"
     clone_depth=$(echo "GIT_CLONE_DEPTH_${edition}")
     path=$edition
 
