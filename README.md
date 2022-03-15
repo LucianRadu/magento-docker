@@ -24,7 +24,7 @@
     ~/projects/livesearch/repos             # directory with repositories - MAGENTO_PATH in scripts
 ```
 
-2. Copy `.env.dist` in `.env` and update `MAGENTO_PATH` with recently created repos path.
+2. Copy `.env2.4.3` in `.env` and update `MAGENTO_PATH` with recently created repos path.
 
 3. Add `$MAGENTO_DOMAIN` from .env to hosts, e.g.:
 
